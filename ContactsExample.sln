@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactsAdapters", "ContactsAdapters\ContactsAdapters.csproj", "{FE9821F5-C988-4574-9CCA-AD898DD90DC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactsADO", "ContactsADO\ContactsADO.csproj", "{84ABD71E-6FFB-4ED6-9A1C-1F6B52653336}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactsFluentMVVM", "ContactsFluentMVVM\ContactsFluentMVVM.csproj", "{8BFDA754-9753-418D-84FB-AF94D36F0020}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE9821F5-C988-4574-9CCA-AD898DD90DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9821F5-C988-4574-9CCA-AD898DD90DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9821F5-C988-4574-9CCA-AD898DD90DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9821F5-C988-4574-9CCA-AD898DD90DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84ABD71E-6FFB-4ED6-9A1C-1F6B52653336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84ABD71E-6FFB-4ED6-9A1C-1F6B52653336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84ABD71E-6FFB-4ED6-9A1C-1F6B52653336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84ABD71E-6FFB-4ED6-9A1C-1F6B52653336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BFDA754-9753-418D-84FB-AF94D36F0020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BFDA754-9753-418D-84FB-AF94D36F0020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BFDA754-9753-418D-84FB-AF94D36F0020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BFDA754-9753-418D-84FB-AF94D36F0020}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
