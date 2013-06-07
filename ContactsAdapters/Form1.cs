@@ -16,5 +16,10 @@ namespace ContactsAdapters
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Contact List 1.0\nWritten by: Manojkumar Purushothaman","About");
+        }
     }
 }
