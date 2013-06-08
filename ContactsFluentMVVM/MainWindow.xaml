@@ -24,12 +24,6 @@
                 <Label Content="Last Call" Height="30"></Label>
             </StackPanel>
             <StackPanel Grid.Column="1">
-                <TextBox Height="26" Margin="2" Text="{Binding Name}"></TextBox>
-                <TextBox Height="26" Margin="2" Text="{Binding Company}"></TextBox>
-                <TextBox Height="26" Margin="2" Text="{Binding Telephone}" Width="150" HorizontalAlignment="Left"></TextBox>
-                <TextBox Height="26" Margin="2" Text="{Binding Email}"></TextBox>
-                <CheckBox Height="26" Margin="2" Checked="{Binding Client}" />
-                <DatePicker Height="26" Margin="2" SelectedDate="{Binding Path=LastCall}" Width="200" HorizontalAlignment="Left"/>
             </StackPanel>
         </Grid>
     </Grid>

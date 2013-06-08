@@ -24,7 +24,6 @@ namespace ContactsFluentMVVM
         {
             InitializeComponent();
             DataContext = new ViewModels.ContactsViewModel();
-
         }
     }
 }
