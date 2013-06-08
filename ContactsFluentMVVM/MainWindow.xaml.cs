@@ -23,6 +23,8 @@ namespace ContactsFluentMVVM
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new ViewModels.ContactsViewModel();
+
         }
     }
 }
