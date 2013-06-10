@@ -30,7 +30,7 @@ namespace ContactsFluentMVVM.ViewModels
                 String.IsNullOrEmpty(Company) &&
                 String.IsNullOrEmpty(Telephone) &&
                 String.IsNullOrEmpty(Email) &&
-                LastCall != null)
+                LastCall == null)
                 return false;
             return true;
         }

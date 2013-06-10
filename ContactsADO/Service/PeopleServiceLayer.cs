@@ -18,7 +18,14 @@ namespace ContactsADO.Service
             {
                 con.Open();
                 com.Connection = con;
-                com.CommandText = @"INSERT INTO People(Name, Company, Telephone, Email, Client, LastCall) VALUES('a', 'b', 'c', 'd', 1, '1/1/2000')";
+                com.CommandText = @"INSERT INTO People(Name, Company, Telephone, Email, Client, LastCall) "+
+                    @"VALUES(@Name, @Company, @Telephone, @Email, @Client, @LastCall)";
+                com.Parameters.Add(new SqlCeParameter("Name", objPeople.Name));
+                com.Parameters.Add(new SqlCeParameter("Company", objPeople.Company));
+                com.Parameters.Add(new SqlCeParameter("Telephone", objPeople.Telephone));
+                com.Parameters.Add(new SqlCeParameter("Email", objPeople.Email));
+                com.Parameters.Add(new SqlCeParameter("Client", objPeople.Client));
+                com.Parameters.Add(new SqlCeParameter("LastCall", objPeople.LastCall));
                 com.ExecuteNonQuery();
             }
             catch (Exception e)
