@@ -38,7 +38,7 @@ namespace ContactsFluentMVVM
                 )
                 .Mappings(m =>
                             m.FluentMappings.AddFromAssemblyOf<App>())
-                //.ExposeConfiguration(BuildSchema)
+                .ExposeConfiguration(BuildSchema)
                 .BuildSessionFactory();
         }
 

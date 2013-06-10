@@ -25,12 +25,85 @@ namespace ContactsFluentMVVM.ViewModels
 
         private bool CanInsert(object obj)
         {
+            if (String.IsNullOrEmpty(Name) && 
+                String.IsNullOrEmpty(Company) &&
+                String.IsNullOrEmpty(Telephone) &&
+                String.IsNullOrEmpty(Email) &&
+                LastCall != null)
+                return false;
             return true;
         }
 
         private void Insert(object obj)
         {
-            MessageBox.Show("Inserted\n");
+            MessageBox.Show("Inserted\n"+Name);
+            Name = "";
+        }
+
+        private String name;
+        public String Name
+        {
+            get { return name; }
+            set
+            {
+                name = value;
+                RaisePropertyChanged(() => this.Name);
+            }
+        }
+
+        private String company;
+        public String Company
+        {
+            get { return company; }
+            set
+            {
+                company = value;
+                RaisePropertyChanged(() => this.Company);
+            }
+        }
+
+        private String telephone;
+        public String Telephone
+        {
+            get { return telephone; }
+            set
+            {
+                telephone = value;
+                RaisePropertyChanged(() => this.Telephone);
+            }
+        }
+
+        private String email;
+        public String Email
+        {
+            get { return email; }
+            set
+            {
+                email = value;
+                RaisePropertyChanged(() => this.Email);
+            }
+        }
+
+        private bool client;
+        public bool Client
+        {
+            get { return client; }
+            set
+            {
+                client = value;
+                RaisePropertyChanged(() => this.Client);
+            }
+        }
+
+        private DateTime? lastCall;
+        public DateTime? LastCall
+        {
+            get { return lastCall; }
+            set
+            {
+                lastCall = value;
+                RaisePropertyChanged(() => this.LastCall);
+            }
         }
 
         #region interface methods

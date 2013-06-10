@@ -22,12 +22,12 @@ namespace ContactsFluentMVVM.Domain
     {
         public PeopleMap()
         {
-            Id(x => x.Id);
+            Id(x => x.Id).GeneratedBy.Increment();
             Map(x => x.Name).Length(100).Nullable();
             Map(x => x.Company).Length(100).Nullable();
             Map(x => x.Telephone).Length(100).Nullable();
             Map(x => x.Email).Length(100).Nullable();
-            Map(x => x.Client).Nullable();
+            Map(x => x.Client).Not.Nullable();
             Map(x => x.LastCall).Nullable();
         }
     }
