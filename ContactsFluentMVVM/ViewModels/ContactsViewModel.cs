@@ -25,6 +25,7 @@ namespace ContactsFluentMVVM.ViewModels
 
         private bool CanInsert(object obj)
         {
+            //validation
             if (String.IsNullOrEmpty(Name) && 
                 String.IsNullOrEmpty(Company) &&
                 String.IsNullOrEmpty(Telephone) &&
@@ -36,8 +37,22 @@ namespace ContactsFluentMVVM.ViewModels
 
         private void Insert(object obj)
         {
-            MessageBox.Show("Inserted\n"+Name);
-            Name = "";
+            //encapsulation
+            Domain.People people = new Domain.People();
+            people.Name = Name;
+            people.Company = Company;
+            people.Telephone = Telephone;
+            people.Email = Email;
+            people.Client = Client;
+            people.LastCall = LastCall;
+
+            //db
+            var session = ((App)Application.Current).session;
+            using (var transaction = session.BeginTransaction())
+            {
+                session.SaveOrUpdate(people);
+                transaction.Commit();
+            }
         }
 
         private String name;
